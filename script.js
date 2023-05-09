@@ -2,19 +2,19 @@
 const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 function checkFields() {
-    const firstName = document.getElementById('first-name');
-    const lastName = document.getElementById('last-name');
-    const email = document.getElementById('email');
-    const password = document.getElementById('password');
-    const firstErr = document.getElementById('first-empty');
-    const lastErr = document.getElementById('last-empty');
-    const emailErr = document.getElementById('email-empty');
-    const passwordErr = document.getElementById('password-empty');
+    const firstName = document.getElementById('first-name'), 
+          lastName = document.getElementById('last-name'), 
+          email = document.getElementById('email'), 
+          password = document.getElementById('password'),
+          firstErr = document.getElementById('first-empty'),
+          lastErr = document.getElementById('last-empty'),
+          emailErr = document.getElementById('email-empty'),
+          passwordErr = document.getElementById('password-empty');
 
-    let validFirstName = false;
-    let validLastName = false;
-    let validEmail = false;
-    let validPassword = false;
+    let validFirstName = false,
+        validLastName = false,
+        validEmail = false,
+        validPassword = false;
 
     if (firstName.value == null || firstName.value == "") {
         firstName.style.backgroundImage = "url(./images/icon-error.svg)";
