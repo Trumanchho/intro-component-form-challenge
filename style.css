@@ -1,0 +1,154 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #ff7a7a;
+    background-image: url(./images/bg-intro-mobile.png);
+}
+
+main {
+    margin: 25% 7% 20% 7%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+#summary-text-box {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#price-box {
+    border-radius: 10px;
+    padding: 15px 15% 15px 15%;
+    color: white;
+    background-color: #6055a5;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 0px 0px rgba(49,49,49,0.2);
+}
+
+#form-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 8px 0px 0px rgba(49,49,49,0.2);
+}
+
+.form-in {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: lightgrey;
+    border-style: solid;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-in:focus {
+    outline: none !important;
+    border-color: #3e3c49;
+}
+
+.form-in {
+    color: #3e3c49;
+}
+
+.transparent::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.error-message {
+    display: none;
+    color: #ff7a7a;
+    font-style: italic;
+    font-size: 0.6rem;
+    text-align: right;
+
+}
+
+.form-in input:focus {
+    border: 2px solid gray;
+}
+
+
+#claim-button {
+    border-radius: 5px;
+    border: none;
+    background-color: #38cc8c;
+    color: white;
+    padding: 15px 10% 15px 10%;
+    width: 100%;
+    box-shadow: 0px 4px 0px 0px rgba(44,171,90,0.93);
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#claim-button:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+#bottom-text {
+    padding: 10px 8% 10px 8%;
+    text-align: center;
+    font-size: 0.6rem;
+    color: #b9b6d3;
+}
+
+#TOS {
+    color: #ff7a7a;
+}
+
+a {
+    color: #ff7a7a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        margin: 12% 15% 12% 15%;
+        max-width: 1200px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    #summary-text-box {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        margin-right: 50px;
+    }
+
+    #main-content-box {
+        flex-basis: 50%;
+    }
+}
+
